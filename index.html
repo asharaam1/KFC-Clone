@@ -9,38 +9,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
+    <!-- Font Awesome CDN ☰-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- !Header -->
     <header class="navbar">
         <div class="sidebar">
-            <button class="menu-button">☰</button>
+            <button class="menu-button"> <i class="fas fa-bars hamburger-icon"></i></button>
         </div>
 
         <div class="logo">
-            <img src="./All Pics/KFC images01.png" alt="" class="kfc-logo">
+            <img src="./All-Pics/KFC-images01.png" alt="" class="kfc-logo">
         </div>
 
         <div class="button">
             <div class="button-1">
-                <img src="./All Pics/KFC images02.png" alt="" srcset="">
+                <img src="./All-Pics/KFC-images02.png" alt="" srcset="">
                 DELIVERY
             </div>
             <div class="button-2">
-                <img src="./All Pics/KFC images03.png" alt="" srcset="">
+                <img src="./All-Pics/KFC-images03.png" alt="" srcset="">
                 PICKUP
             </div>
         </div>
 
         <div class="location">
-            <div class="pickup-location">Pickup From SMCHS</div>
+            <div class="pickup-location">
+                <button class="pickup-store-name">
+                    <span>
+                        <h4>Pickup From</h4>
+                    </span>
+                    <p>SMCHS</p>
+                </button>
+            </div>
         </div>
 
         <div class="cart">
             <div class="cart-icon">
-                <img src="./All Pics/KFC images05.svg" alt="Cart">
-                <span class="cart-count">1</span>
+                <span class="cart-count">0</span>
             </div>
         </div>
 
@@ -51,7 +60,40 @@
 
     <!-- !Main Body (Sections) -->
     <main>
+        <section>
+            <div class="box-1">
+                <div class="slides">
+                    <div class="slide"><img src="All-Pics/KFC-images06.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="All-Pics/KFC-images07.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="All-Pics/KFC-images08.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="All-Pics/KFC-images09.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="All-Pics/KFC-images10.jpg" alt="Image 5"></div>
+                </div>
 
+
+
+                <!-- <div class="slider">
+                    <img src="All-Pics/KFC-images06.jpg" alt="" id="slide-1">
+                    <img src="All-Pics/KFC-images07.jpg" alt="" id="slide-2">
+                    <img src="All-Pics/KFC-images08.jpg" alt="" id="slide-3">
+                    <img src="All-Pics/KFC-images09.jpg" alt="" id="slide-4">
+                    <img src="All-Pics/KFC-images10.jpg" alt="" id="slide-5">
+                </div> -->
+                <!-- <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                </div>                 -->
+            </div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+            <div class="box-5"></div>
+            <div class="box-6"></div>
+            <div class="box-7"></div>
+        </section>
     </main>
 
     <!-- !Footer -->
@@ -59,6 +101,17 @@
 
     </footer>
 
+    <!-- <script>
+        document.querySelectorAll('.slider-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script> -->
 </body>
 
 </html>
